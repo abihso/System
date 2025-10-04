@@ -4,7 +4,7 @@ import Cardinfo from "../../components/card-info"
 import Reminder from "../../components/reminder"
 import Announcement from "../../components/announcement"
 import Calendar from 'react-calendar'
-import "react-calendar/dist/Calendar.css"
+// import "react-calendar/dist/Calendar.css"
 import assets from "../../assets/assets"
 import TimesTable from "../../components/times-table"
 

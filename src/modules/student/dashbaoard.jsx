@@ -23,7 +23,6 @@ import Accounts from "../pages/accounts";
 import Results from "../pages/results";
 import ChangePasswordPage from "../pages/change-password";
 import Mobilenav from "../../components/mobile/mobile-nav";
-;
 import Logo from "../../components/logo";
 import MobileDashboard from "../../components/mobile/modile-dashboard";
 const Dashbaoard = () => {
