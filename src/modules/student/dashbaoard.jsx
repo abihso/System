@@ -1,3 +1,8 @@
+import { IoMdNotifications } from "react-icons/io"; 
+import { GiSettingsKnobs } from "react-icons/gi"; 
+import { BsSunFill } from "react-icons/bs"; 
+import { IoIosMail } from "react-icons/io"; 
+import { FiMail } from "react-icons/fi"; 
 import { BiLogOut } from "react-icons/bi"; 
 import { MdOutlineAccountBalance } from "react-icons/md"; 
 import { BiCoinStack } from "react-icons/bi"; 
@@ -11,7 +16,6 @@ import { CgMenu } from "react-icons/cg";
 import { RiDashboardFill } from "react-icons/ri"; 
 import assets from "../../assets/assets"
 import Navbar2 from "../../components/nav-bar2"
-import 'react-calendar/dist/Calendar.css';
 import Dashboardpage from "../pages/dashboard-page";
 import CoruseRegistrationPage from "../pages/coruse-registration-page";
 import Examination from "../pages/examination-timetable";
@@ -265,7 +269,7 @@ const Dashbaoard = () => {
       </div>
       <div className="hidden md:grid">
         <Navbar2 items={items} activePage={activePage} setPage={setPage} setActivePage={setActivePage} profileModal={profileModal} setProfileModal={setProfileModal} />
-        <div className="flex flex-1 min-h-screen" >
+        <div className="flex flex-1 mt-14 min-h-screen" >
           <div className="w-[280px] background-color4 relative" >
             <div className="flex mt-3 flex-col gap-1 min-h-48 font-bold text-gray-400 items-center" >
               <img src={assets["profile1-logo"]} width={150} />
@@ -330,22 +334,27 @@ const Dashbaoard = () => {
                   <div><CgMenu className="font-bold text-2xl text-white" /></div>
                   <div className="flex cursor-pointer gap-2 h-10 px-7 rounded-xl overflow-hidden items-center background-color9 mr-5" >
                     <div> 
-                      <img width={20} src={assets["notification-logo"]}/>
+                      {/* <img width={20} src={assets["notification-logo"]}/> */}
+                      <IoMdNotifications className="text-white text-xl" />
                     </div>
                     <div className="border-l pl-2"> 
                       <img width={20} src={assets["ai-logo"]}/>
                     </div>
                     <div  className="flex border-l h-5 pl-2"> 
-                      <img width={20} src={assets["mail-logo"]}/>
+                    {/* <img width={20} src={assets["mail-logo"]}/> */}
+                      <FiMail className="text-white text-xl" />
                     </div>
                     <div > 
-                      <img width={20} src={assets["letter-logo"]}/>
+                    {/* <img width={20} src={assets["letter-logo"]}/> */}
+                    <IoIosMail className="text-white text-2xl" />
                     </div>
                     <div className="border-l pl-2"> 
-                      <img width={20} src={assets["settings-logo"]}/>
+                      {/* <img width={20} src={assets["settings-logo"]}/> */}
+                      <BsSunFill className="text-white text-xl" />
                     </div>
                     <div> 
-                      <img width={20} src={assets["settings2-logo"]}/>
+                      {/* <img width={20} src={assets["settings2-logo"]}/> */}
+                      <GiSettingsKnobs className="text-white text-xl" />
                     </div>
                     
                   </div>

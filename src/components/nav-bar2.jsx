@@ -10,7 +10,7 @@ import Searchbar from "./search-bar"
 const Navbar2 = ({items,setPage,setProfileModal,profileModal,setActivePage,activePage}) => {
   
   return (
-    <nav className="flex  min-h-14 background-color4" >
+    <nav className="fixed top-0 left-0 right-0 z-10 flex  min-h-14 background-color4" >
         <div className="flex items-center gap-20 w-[750px] pl-14" >
           <Logo f="Uni" l="Nova" styles="text-color4 text-logo1" lstyles="text-color6" />
           <Searchbar />
