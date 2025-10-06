@@ -23,6 +23,7 @@ import Accounts from "../pages/accounts";
 import Results from "../pages/results";
 import ChangePasswordPage from "../pages/change-password";
 import Mobilenav from "../../components/mobile/mobile-nav";
+;
 import Logo from "../../components/logo";
 import MobileDashboard from "../../components/mobile/modile-dashboard";
 const Dashbaoard = () => {
@@ -208,7 +209,7 @@ const Dashbaoard = () => {
   ]
   return (
     <>
-      <div className="md:hidden bg-[#F8DBFD] flex-1" >
+      <div className="md:hidden inter bg-[#F8DBFD] flex-1" >
         {sideBar &&
           <div className="fixed flex flex-col flex-1 top-0 left-0 bottom-0 w-3/4 z-10 bg-[#F8DBFD] shadow-[0_0_30px_rgba(0,0,0,1)] border-[#16181863]  " >
             <div className="h-12 flex px-4 items-center w-full bg-[#1C2020]" >
@@ -241,7 +242,7 @@ const Dashbaoard = () => {
                   <div onClick={() => { setPage(item.page);  setSideBar(false)}} key={index} className="h-10" >
                     <div className="flex gap-3 items-center h-full pl-5 w-4/5 rounded-[10px] ml-[10px]" >
                      {item.icon2}
-                      <p className="font-bold text-xl text-[#415760]" >
+                      <p className="font-bold text-sm text-[#415760]" >
                         {item.name} 
                       </p>
                     </div>

@@ -10,7 +10,7 @@ const Mobilenav = ({setSideBar,setPage}) => {
                 
               </div>
               <div className="col-span-4">
-                <Logo f="Uni" l="Nova" styles="text-color4 text-logo1" lstyles="text-color6" />
+                <Logo f="Uni" l="Nova" styles="oi text-color4 text-logo1" lstyles="text-color6 inter text-xl" />
               </div>
               <div className="col-span-4 flex gap-3 items-center justify-end">
                 <div> 

@@ -121,8 +121,8 @@ const Login = () => {
         <div className="border border-[#16181863] pl-5 shadow-[0_0_30px_rgba(0,0,0,0.55)] mt-2
          h-5/6 rounded-r-2xl background-color8">
             <div className="mt-20" >
-              <p className="text-color3 font-extrabold text-[5rem]" >Welcome back,</p>
-              <p className="pl-3 text-color3 -mt-5 text-3xl font-bold" >Dear😇  </p>
+              <p className="text-color3 font-extrabold text-[6rem]" >Welcome back,</p>
+              <p className="pl-3 text-color3 -mt-5 text-4xl font-bold" >Dear😇  </p>
               <p className="pl-3 text-color3 font-bold" >login to access your account</p>
           </div>
           <div className=" flex justify-center" >
@@ -131,7 +131,7 @@ const Login = () => {
           
         </div>
       <div className="text-[10px] text-color5 text-center mt-10" >
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa cum veritatis quos, corrupti voluptate totam nobis assumenda. Veniam ipsa, saepe quibusdam, similique odio sint omnis minus praesentium cupiditate quae eligendi corrupti debitis beatae nisi dolor corporis pariatur facilis aperiam placeat? Delectus sequi eos provident quis amet officia fugiat tempora consequatur!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa cum veritatis quos, corrupti voluptate totam nobis assumenda. Veniam ipsa, saepe quibusdam, similique
       </div>
       </div>
     </div>

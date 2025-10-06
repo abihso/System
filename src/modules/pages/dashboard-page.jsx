@@ -4,7 +4,6 @@ import Cardinfo from "../../components/card-info"
 import Reminder from "../../components/reminder"
 import Announcement from "../../components/announcement"
 import Calendar from 'react-calendar'
-// import "react-calendar/dist/Calendar.css"
 import assets from "../../assets/assets"
 import TimesTable from "../../components/times-table"
 
@@ -14,8 +13,8 @@ const Dashboardpage = ({onChangeCalendar,valueCalendar,assignmentData,messagesDa
     <div  className="background-color10 pb-10 px-5" >
             <div className="flex justify-between items-center" >
               <div className="-mt-36 w-full" >
-                <p className="font-bold text-white" >Attendance</p>
-                <div className="flex w-full flex-wrap justify-between gap-3 items-center" >
+                <p className="font-bold text-white mb-3" >Attendance</p>
+                <div className="flex w-full flex-wrap justify-center gap-3 items-center" >
                 <Card1 />
                 <Card1 />
                 <Card1 />
@@ -115,7 +114,7 @@ const Dashboardpage = ({onChangeCalendar,valueCalendar,assignmentData,messagesDa
             </div>
            <TimesTable />
             <p className="text-sm -mb-6 text-[#B2B4B9] font-bold" >Copyright&copy; {`${new Date().getFullYear()}`}.All rights reserved</p>
-          </div>
+    </div>
   )
 }
 

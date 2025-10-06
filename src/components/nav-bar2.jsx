@@ -17,7 +17,7 @@ const Navbar2 = ({items,setPage,setProfileModal,profileModal,setActivePage,activ
         </div>
         <div className="flex gap-1 justify-end w-full" >
           {
-          items.map((tap, index) => (<div onClick={() => { setPage(tap.to); setActivePage(tap.to)}} className={activePage == tap.to ? `flex cursor-pointer border-t-[5px] rounded-b-lg border-[#FFE1FF] bg-[#424C58] gap-2 px-4 items-center text-white font-bold text-xs` : `flex cursor-pointer hover:border-t-[5px] transition-all hover:rounded-b-lg border-[#FFE1FF] hover:bg-[#424C58] gap-2 px-4 items-center text-white font-bold text-xs`} key={index}>
+          items.map((tap, index) => (<div onClick={() => { setPage(tap.to); setActivePage(tap.to)}} className={activePage == tap.to ? `flex rounded-b-[8px] cursor-pointer border-t-[5px] border-[#FFE1FF] bg-[#424C58] gap-2 px-4 items-center text-white font-bold text-xs` : `flex rounded-b-[8px] cursor-pointer hover:border-t-[5px] transition-all border-[#FFE1FF] hover:bg-[#424C58] gap-2 px-4 items-center text-white font-bold text-xs`} key={index}>
               <div className="" >
                 <img src={tap.logo}  alt="" />
               </div>

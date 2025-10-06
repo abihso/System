@@ -10,7 +10,7 @@ const MobileDashboard = ({ dailyScheduleData
 }) => {
   return (
     <>
-       <Mobileprofile />
+          <Mobileprofile />
           <MobileCourseStats />
           <div className="mt-3" >
             <Announcement />
