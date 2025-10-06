@@ -31,7 +31,8 @@ const Dashbaoard = () => {
   const [profileModal, setProfileModal] = useState("")
   const [activePage,setActivePage] = useState(false)
   const [page, setPage] = useState("dashboard")
-  const [sideBar,setSideBar] = useState(false)
+  const [sideBar, setSideBar] = useState(false)
+  const [showSideBar,setShowSideBar] = useState(true)
   const renderPage = () => {
     if (page == "register") {
       return <CoruseRegistrationPage />
@@ -270,7 +271,7 @@ const Dashbaoard = () => {
       <div className="hidden md:grid">
         <Navbar2 items={items} activePage={activePage} setPage={setPage} setActivePage={setActivePage} profileModal={profileModal} setProfileModal={setProfileModal} />
         <div className="flex flex-1 mt-14 min-h-screen" >
-          <div className="w-[280px] background-color4 relative" >
+          {showSideBar && <div className="w-[280px] background-color4 relative" >
             <div className="flex mt-3 flex-col gap-1 min-h-48 font-bold text-gray-400 items-center" >
               <img src={assets["profile1-logo"]} width={150} />
               <p className="text-[12px]" >Hey, Abihsolo</p>
@@ -292,7 +293,7 @@ const Dashbaoard = () => {
             <div className="pl-4">
               {
                 sideBarTaps.map((item,index) => (
-                  <div key={index} onClick={() => { setPage(item.page); setActivePage(item.page)}} className={ activePage == item.page ? `flex border-[#F8DBFD] cursor-pointer border-l-4 w-4/5 bg-[#272B2B] py-2 pl-3 items-center gap-2 justify-between` : `flex hover:border-[#F8DBFD] cursor-pointer transition-all hover:border-l-4 w-4/5  hover:bg-[#272B2B] py-2 pl-3 items-center gap-2 justify-between`} >
+                  <div key={index} onClick={() => { setPage(item.page); setActivePage(item.page)}} className={ activePage == item.page ? `flex border-[#F8DBFD] cursor-pointer border-l-4 w-4/5 bg-[#272B2B] py-2 pl-3 items-center gap-2 justify-between rounded-r-[8px] ` : `flex hover:border-[#F8DBFD] rounded-r-[8px] cursor-pointer transition-all hover:border-l-4 w-4/5  hover:bg-[#272B2B] py-2 pl-3 items-center gap-2 justify-between`} >
                 <div>
                   <img src={item.icon} alt="" />
                 </div>
@@ -305,7 +306,7 @@ const Dashbaoard = () => {
             <div className="pl-4">
               {
                 sideBarTaps2.map((item, index) => (
-                  <div key={index} className="flex hover:border-[#F8DBFD] cursor-pointer hover:border-l-4 w-4/5 transition-all hover:bg-[#272B2B] py-2 pl-3 items-center gap-2 justify-between" >
+                  <div key={index} className={ activePage == item.page ? `flex border-[#F8DBFD] cursor-pointer border-l-4 w-4/5 bg-[#272B2B] py-2 pl-3 items-center gap-2 justify-between rounded-r-[8px] ` : `flex hover:border-[#F8DBFD] rounded-r-[8px] cursor-pointer transition-all hover:border-l-4 w-4/5  hover:bg-[#272B2B] py-2 pl-3 items-center gap-2 justify-between`} >
                 <div>
                   <img src={item.icon} alt="" />
                 </div>
@@ -327,11 +328,11 @@ const Dashbaoard = () => {
                 <a>Help center</a>
               </div>
             </div>
-          </div>
+          </div>}
           <div className="w-full " >
               <div className="min-h-52 background-color4 " >
                 <div className="flex justify-between pl-1" >
-                  <div><CgMenu className="font-bold text-2xl text-white" /></div>
+                  <div><CgMenu onClick={() => setShowSideBar(pre => !pre)} className="font-bold text-2xl text-white" /></div>
                   <div className="flex cursor-pointer gap-2 h-10 px-7 rounded-xl overflow-hidden items-center background-color9 mr-5" >
                     <div> 
                       {/* <img width={20} src={assets["notification-logo"]}/> */}

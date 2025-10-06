@@ -38,32 +38,32 @@ const Navbar2 = ({items,setPage,setProfileModal,profileModal,setActivePage,activ
         profileModal == "show" && (
           <div onMouseEnter={() => setProfileModal("show")} onMouseLeave={() => setProfileModal("")} className="fixed w-44 h-50 rounded-[10px] border px-5 py-6 border-gray-600 bg-[#1C2020] right-0 top-10 mr-5" >
         
-           <div className="flex gap-5 py-3 pl-1 hover:bg-[#424C58] cursor-pointer items-center border-b border-[#6C6D6D] pb-2" >
-          <FaUserCog className="text-[#F68D88] text-xl" />
-          <p className="text-[#6C6D6D] font-bold text-sm" >
-            User Profile
-          </p>
-        </div>
-        <div className="flex gap-5 py-3 pl-1 hover:bg-[#424C58] cursor-pointer items-center border-b mt-3 border-[#6C6D6D] pb-2" >
-          <IoMdSettings className="text-[#F68D88] text-xl" />
-          <p className="text-[#6C6D6D] font-bold text-sm" >
-            Settings
-          </p>
-        </div>
-        <div className="flex gap-5 py-3 pl-1 hover:bg-[#424C58] cursor-pointer items-center border-b mt-3 border-[#6C6D6D] pb-2" >
-          <BiLoaderCircle className="text-[#F68D88] text-xl" />
-          <p className="text-[#6C6D6D] font-bold text-sm" >
-            Projects
-          </p>
-        </div>
-        <div className="flex gap-5 py-3 pl-1 hover:bg-[#424C58] cursor-pointer items-center border-b mt-3 border-[#6C6D6D] pb-2" >
-          <BiLogOut className="text-[#F68D88] text-xl" />
-          <p className="text-[#6C6D6D] font-bold text-sm" >
-            Logout
-          </p>
-        </div>
+              <div className="flex gap-5 py-3 pl-1 hover:rounded-[9px] hover:bg-[#424C58] cursor-pointer items-center border-b border-[#6C6D6D] pb-2" >
+                <FaUserCog className="text-[#F68D88] text-xl" />
+                <p className="text-[#6C6D6D] font-bold text-sm" >
+                  User Profile
+                </p>
+              </div>
+              <div className="flex gap-5 py-3 pl-1 hover:rounded-[9px] hover:bg-[#424C58] cursor-pointer items-center border-b mt-3 border-[#6C6D6D] pb-2" >
+                <IoMdSettings className="text-[#F68D88] text-xl" />
+                  <p className="text-[#6C6D6D] font-bold text-sm" >
+                    Settings
+                  </p>
+              </div>
+              <div className="flex gap-5 py-3 pl-1 hover:rounded-[9px] hover:bg-[#424C58] cursor-pointer items-center border-b mt-3 border-[#6C6D6D] pb-2" >
+                <BiLoaderCircle className="text-[#F68D88] text-xl" />
+                <p className="text-[#6C6D6D] font-bold text-sm" >
+                  Projects
+                </p>
+              </div>
+              <div className="flex gap-5 py-3 pl-1 hover:rounded-[9px] hover:bg-[#424C58] cursor-pointer items-center border-b mt-3 border-[#6C6D6D] pb-2" >
+                <BiLogOut className="text-[#F68D88] text-xl" />
+                <p className="text-[#6C6D6D] font-bold text-sm" >
+                  Logout
+                </p>
+              </div>
         
-      </div>
+          </div>
         )
       }
       </nav>
